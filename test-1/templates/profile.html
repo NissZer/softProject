@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{username}}</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+          body {
+            height: 100vh;
+
+			background-image:url("https://static.pexels.com/photos/42273/doctor-medical-medicine-health-42273.jpeg");
+			background-position :center;
+			background-size: cover;
+			background-repeat:no-repeat;
+
+          }
+
+		  .fa-lg {
+			font-size: 10em;
+
+			}
+		  .fa {
+			position: relative;
+			padding-top: 25px;
+			display: table-cell;
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			top:12px;
+			font-size:25px;
+
+			}
+
+		  .main-menu:hover, nav.main-menu.expanded {
+			width:250px;
+			overflow:hidden;
+			opacity:1;
+
+			}
+
+		  .main-menu {
+			background:#F7F7F7;
+			position:absolute;
+						border-left : 0px;
+
+			top:0;
+			bottom:0;
+			height:100%;
+			left:0;
+			width:55px;
+			overflow:hidden;
+			-webkit-transition:width .2s linear;
+			transition:width .2s linear;
+			-webkit-transform:translateZ(0) scale(1,1);
+			box-shadow: 1px 0 15px rgba(0, 0, 0, 0.07);
+			  opacity:1;
+			}
+
+		  .main-menu>ul {
+			margin:7px 0;
+			border-left : 0px;
+
+			}
+
+		  .main-menu li {
+			position:relative;
+			display:block;
+			width:250px;
+			border-left : 0px;
+
+
+
+
+			}
+
+			.main-menu li>a {
+			position:relative;
+			width:290px;
+			height: 100px;
+			display:table;
+			border-collapse:collapse;
+			border-spacing:0;
+			color:#8a8a8a;
+			font-size: 13px;
+			text-decoration:none;
+			-webkit-transform:translateZ(0) scale(1,1);
+			-webkit-transition:all .14s linear;
+			transition:all .14s linear;
+			font-family: 'Strait', sans-serif;
+			border-top:1px solid #f2f2f2;
+			border-left : 0px;
+
+			text-shadow: 1px 1px 1px  #fff;
+			}
+
+
+
+			.main-menu .nav-icon {
+
+			position:relative;
+			display:table-cell;
+			width:55px;
+			height:36px;
+			text-align:center;
+			vertical-align:middle;
+			font-size:18px;
+
+			}
+
+			.main-menu .nav-text  {
+
+			position:relative;
+			display:table-cell;
+			vertical-align:middle;
+			width:190px;
+
+			font-size: 15px;
+			font-family: 'Lato', sans-serif;
+			}
+
+			.main-menu .share {
+			}
+
+
+
+			.main-menu .fb-like {
+
+			left: 180px;
+			position:absolute;
+			top: 15px;
+			}
+
+			.main-menu>ul.logout {
+			position:absolute;
+			left:0;
+			bottom:0;
+
+			}
+
+			.no-touch .scrollable.hover {
+			overflow-y:hidden;
+
+			}
+
+			.no-touch .scrollable.hover:hover {
+			overflow-y:auto;
+			overflow:visible;
+
+			}
+
+
+			/
+
+			a:hover,a:focus {
+			text-decoration:none;
+			border-left:0px solid #d3d3d3;
+
+
+
+			}
+
+			nav {
+			-webkit-user-select:none;
+			-moz-user-select:none;
+			-ms-user-select:none;
+			-o-user-select:none;
+			user-select:none;
+
+			}
+
+			nav ul,nav li {
+			outline:0;
+			margin:0;
+			padding:0;
+			text-transform: uppercase;
+			}
+
+
+
+
+			/* Darker element side menu Start*/
+
+
+			.darkerli
+			{
+			background-color:#ededed;
+			text-transform:capitalize;
+			}
+
+			.darkerlishadow
+			{
+			background-color:#ededed;
+			text-transform:capitalize;
+			-webkit-box-shadow: inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+			-moz-box-shadow:    inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+			box-shadow:         inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+			}
+
+
+			.darkerlishadowdown
+			{
+			background-color:#ededed;
+			text-transform:capitalize;
+			-webkit-box-shadow: inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
+			-moz-box-shadow:    inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
+			box-shadow:         inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
+			}
+
+			/* Darker element side menu End*/
+
+
+
+
+			.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+			color:#fff;
+			background-color:#d3d3d3;
+			text-shadow: 0px 0px 0px;
+			}
+			.area {
+			float: left;
+			background: #e2e2e2;
+			width: 100%;
+			height: 100%;
+			}
+			@font-face {
+			  font-family: 'Titillium Web';
+			  font-style: normal;
+			  font-weight: 300;
+			  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+			}
+
+			.content{
+			text-align:center;
+			padding-top:25%;
+			text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)
+		}
+
+		h1{
+			font-family: 'Lato', sans-serif;
+			font-weight: 700;
+			font-size:80px;
+			color:white;
+			padding-left: 50px;
+		}
+
+		h3{
+			font-family: 'Lato', sans-serif;
+			font-weight: 400;
+			color:white;
+			font-size:24px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	</div><nav class="main-menu">
+		<br><br><br>
+		<div class="settings"></div>
+			<div class="scrollbar" id="style-1">
+				<ul>
+					<li>
+					<a href="#")>
+					<i class="fa fa-home fa-lg"></i>
+					<span class="nav-text">  Home</span>
+					</a>
+					</li>
+
+					<li>
+					<a href="#">
+					<i class="fa fa-calendar" aria-hidden="true"></i>
+					<span class="nav-text">  Appointments</span>
+					</a>
+					</li>
+
+					<li>
+					<a href="#">
+					<i class="fa fa-medkit" aria-hidden="true"></i>
+					<span class="nav-text">  Patients</span>
+					</a>
+					</li>
+
+					<li>
+					<a href="#">
+					<i class="fa fa-money" aria-hidden="true"></i>
+					<span class="nav-text">  Bills</span>
+					</a>
+					</li>
+
+					<li>
+					<a href="#">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					<span class="nav-text">  Agenda</span>
+					</a>
+					</li>
+
+					<br><br><br><br>
+
+					<li>
+					<a href="/">
+					<i class="fa fa-sign-out" aria-hidden="true"></i>
+					<span class="nav-text">  Logout</span>
+					</a>
+					</li>
+					</ul>
+					</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div  class="col-lg-12">
+				<div class="content">
+					<h1>Welcome {{username}}</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
